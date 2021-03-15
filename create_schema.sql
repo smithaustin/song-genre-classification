@@ -29,3 +29,21 @@ create table lyrics(
    lyrics varchar(8000) not null,
    genre varchar(100) not null
 );
+
+create table audio_features(
+   id varchar(50) primary key,
+   analysis_sample_rate integer,
+   danceability float,
+   duration float,
+   end_of_fade_in float,
+   energy float,
+   music_key integer,
+   key_confidence float,
+   loudness float,
+   mode float,
+   mode_confidence float,
+   start_of_fade_out float,
+   tempo float,
+   time_signature integer,
+   time_signature_confidence float
+);
